@@ -10,4 +10,7 @@ module.exports = ({ env }) => ({
       ssl: env.bool("DATABASE_SSL"),
     },
   },
+  pool: {
+    acquireTimeoutMillis: env.int("DATABASE_POOL_ACQUIRE_TIMEOUT_MILLIS"),
+  },
 });
