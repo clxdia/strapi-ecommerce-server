@@ -12,7 +12,8 @@ module.exports = createCoreController('api::product.product', ({ strapi }) => ({
 
         const entity = await strapi.db.query('api::product.product').findOne(
             {
-                where: { slug: id }
+                where: { slug: id },
+                populate: ['img', 'categories']
                 // where: { id: id }
             }
         );
