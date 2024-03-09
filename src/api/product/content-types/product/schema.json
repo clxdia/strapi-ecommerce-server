@@ -52,6 +52,9 @@
         "featured",
         "trending"
       ]
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
